@@ -22,6 +22,10 @@
     "web": {
       "output": "single",
       "favicon": "./assets/images/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-font",
+      "expo-image"
+    ]
   }
 }
