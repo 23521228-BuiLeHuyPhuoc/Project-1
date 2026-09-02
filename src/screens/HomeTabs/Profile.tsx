@@ -4,10 +4,10 @@ import TodoScreen from '../todo';
 import ProductScreen from '../ProductScreen';
 const Drawer = createDrawerNavigator();
 import Ionicons from '@expo/vector-icons/Ionicons';
-
+import CustomDraw from './CustomDraw';
 export default function Profile() {
   return (
-    <Drawer.Navigator screenOptions={{ headerShown: true }}>
+    <Drawer.Navigator drawerContent={(props: any) => <CustomDraw {...props} />}>
       <Drawer.Screen name="todo" component={TodoScreen} options={{
         title: 'Tai khoan',
         drawerLabel: "HIHIHIHI",
